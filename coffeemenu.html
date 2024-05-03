@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Menu</title>
+    <link rel="icon" type="image/x-icon" href="/storage/0403-0201/login form/coffeeshop.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<nav>
+  <a href="myhomepage.html" target="_self">Home</a>
+    <a href="table.html" target="_self" onclick="changeFavicon('schedule.png')">Schedule</a>
+        <a href="playlist.html" target="_self" onclick="changeFavicon('playlist.png')">My Playlist</a>
+      <a href="musicvideo.html" target="_self" onclick="changeFavicon('mv.png')">Music Video</a>
+      <a href="coffeemenu.html" target="_self"  onclick="changeFavicon('coffee.png')">Coffee Menu</a>  
+     
+</nav>
+<style>
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  z-index: 1;
+  transition: background-color 0.3s; /* Add transition effect for smoother color change */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s; /* Add transform transition */
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block; /* Ensure proper spacing between links */
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+    }
+
+    main {
+        padding: 200px 20px 20px; /* Increase top padding to make space for header */
+        text-align: center;
+    }
+body {
+  background-image: url('bgimagewhite.jpg');
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 2em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.menu-item-image {
+    width: 150px;
+    margin-right: 20px;
+  
+}
+
+.menu-item-image img {
+    width: 150%;
+    border-radius: 10px;
+  
+}
+
+.menu-item-name {
+    font-size: 2.0em;
+    font-weight: bold;
+    color: white;
+  background-color: #DD571C; 
+}
+
+.menu-item-details {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.menu-item-price {
+    font-weight: bold;
+    color: black;
+    font-size: 2.0em;
+    background-color: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.buy-button {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold; 
+    transition: background-color 0.3s; /* Add transition effect for smoother color change */
+}
+
+.buy-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+body{
+  font-family: "Playfair Display", serif; 
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <h1>Coffee Shop Menu</h1>
+
+        <h2>Regular Coffees</h2>
+      
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="americano.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Americano</div>
+            </div>
+            <div class="menu-item-price">₱50 - ₱100</div>
+           <button class="buy-button">BUY</button>
+        </div>
+        
+      <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="cappucino.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Cappucino</div>
+            </div>
+            <div class="menu-item-price">₱80 - ₱150</div>
+        <button class="buy-button">BUY</button>
+        </div>
+      
+      <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="espresso.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Espresso</div>
+            </div>
+            <div class="menu-item-price">₱40 - ₱80</div>
+        <button class="buy-button">BUY</button>
+        </div>
+
+      <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="irish.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Irish</div>
+            </div>
+            <div class="menu-item-price">₱100 - ₱200</div>
+        <button class="buy-button">BUY</button>
+        </div>
+      
+      <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="lavenderlatte.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Lavender Latte</div>
+            </div>
+            <div class="menu-item-price">₱120 - ₱250</div>
+        <button class="buy-button">BUY</button>
+        </div>
+      
+      <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="longblack.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Long Black</div>
+            </div>
+            <div class="menu-item-price">₱50 - ₱100</div>
+        <button class="buy-button">BUY</button>
+        </div>
+      
+       <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="ristretto.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Ristretto</div>
+            </div>
+            <div class="menu-item-price">₱60 - ₱120</div>
+         <button class="buy-button">BUY</button>
+        </div>
+      
+      
+        <h2>Specialty Coffees</h2>
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="mocha.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Mocha</div>
+            </div>
+            <div class="menu-item-price">₱80 - ₱150</div>
+          <button class="buy-button">BUY</button>
+        </div>
+      
+      <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="caramelmacchiato.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Caramel Macchiato</div>
+            </div>
+            <div class="menu-item-price">₱90 - ₱180</div>
+        <button class="buy-button">BUY</button>
+        </div>
+        
+ <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="affogato.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Affogato</div>
+            </div>
+            <div class="menu-item-price">₱100 - ₱200</div>
+   <button class="buy-button">BUY</button>
+        </div>
+      
+      <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="cafeaulait.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Café au Lait</div>
+            </div>
+            <div class="menu-item-price">₱80 - ₱150</div>
+        <button class="buy-button">BUY</button>
+        </div>
+      
+            <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="cafelattemacchiato.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Café Latte Macchiato</div>
+            </div>
+            <div class="menu-item-price">₱90 - ₱180</div>
+              <button class="buy-button">BUY</button>
+        </div>
+      
+                  <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="cafeconleche.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Café con Leche</div>
+            </div>
+            <div class="menu-item-price">₱80 - ₱150</div>
+                    <button class="buy-button">BUY</button>
+        </div>
+      
+        <h2>Other Drinks</h2>
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="tea.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Tea</div>
+                <div class="menu-item-details">Various flavors available</div>
+            </div>
+            <div class="menu-item-price">₱50 - ₱100</div>
+          <button class="buy-button">BUY</button>
+        </div>
+        
+      <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="hotchocolate.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Hot Chocolate</div>
+                <div class="menu-item-details">Various flavors available</div>
+            </div>
+            <div class="menu-item-price">₱50 - ₱100</div>
+        <button class="buy-button">BUY</button>
+        </div>
+      
+            <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="icedcoffee.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Iced Coffee</div>
+                <div class="menu-item-details">Various flavors available</div>
+            </div>
+            <div class="menu-item-price">₱60 - ₱120</div>
+              <button class="buy-button">BUY</button>
+        </div>
+      
+      <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="frappe.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Frappe</div>
+                <div class="menu-item-details">Various flavors available</div>
+            </div>
+            <div class="menu-item-price">₱80 - ₱150</div>
+        <button class="buy-button">BUY</button>
+        </div>
+      
+      <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="icedtea.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Iced Tea</div>
+                <div class="menu-item-details">Various flavors available</div>
+            </div>
+            <div class="menu-item-price">₱30 - ₱80</div>
+        <button class="buy-button">BUY</button>
+        </div>
+      
+      <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="lemonade.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Lemonade</div>
+                <div class="menu-item-details">Various flavors available</div>
+            </div>
+            <div class="menu-item-price">₱50 - ₱100</div>
+        <button class="buy-button">BUY</button>
+        </div>
+      
+      <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="fruitsmoothie.jpg">
+            </div>
+            <div>
+                <div class="menu-item-name">Fruit Smoothie</div>
+                <div class="menu-item-details">Various flavors available</div>
+            </div>
+            <div class="menu-item-price">₱80 - ₱150</div>
+        <button class="buy-button">BUY</button>
+        </div>
+      
+      
+      
+    </div>
+</body>
+</html>

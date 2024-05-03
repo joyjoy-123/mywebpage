@@ -1,0 +1,104 @@
+body {
+  background-image: url('/storage/0403-0201/login form/bgclouds.jpg');
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  background-size: cover;
+  background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+  height: 500px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  margin: auto;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.icon {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+.input-label {
+    margin-right: 10px; /* Space between label and icon */
+    margin-bottom: 5px; /* Space between label and input */
+}
+.forgot-password a,
+    .register-link a {
+          color: #ff5e78;
+            text-decoration: underline;
+    }
+
+    .forgot-password a:hover,
+    .register-link a:hover {
+        text-decoration: underline; /* Add underline on hover */

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Creative Homepage</title>
+    <link rel="icon" type="image/x-icon" href="/storage/0403-0201/login form/homepage.ico">
+<style>
+    body {
+        background-image: url('/storage/0403-0201/login form/bgclouds.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Playfair Display', serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        padding-top: 40px;
+    }
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  z-index: 1;
+  transition: background-color 0.3s; /* Add transition effect for smoother color change */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s; /* Add transform transition */
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block; /* Ensure proper spacing between links */
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+    main {
+        padding: 200px 20px 20px; /* Increase top padding to make space for header */
+        text-align: center;
+
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.9); /* Lighten the background color */
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+        max-width: 300px; /* Limit card width */
+    }
+
+    footer {
+          background: linear-gradient(45deg, #ff416c, #ff4b2b);
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+        transition: background-color 0.3s; /* Add transition effect for smoother color change */
+    }
+
+    footer:hover {
+        background-color: rgba(0, 0, 0, 0.9); /* Darken the background color on hover */
+   
+}
+
+.social-icon {
+    width: 50px; /* Set the width of the social icons */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add some space around the icons */
+}
+
+.social-link {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+}
+</style>
+</head>
+<body>
+
+
+
+<nav>
+  <a href="myhomepage.html" target="_self">Home</a>
+    <a href="table.html" target="_self" onclick="changeFavicon('schedule.png')">Schedule</a>
+        <a href="playlist.html" target="_self" onclick="changeFavicon('playlist.png')">My Playlist</a>
+      <a href="musicvideo.html" target="_self" onclick="changeFavicon('mv.png')">Music Video</a>
+      <a href="coffeemenu.html" target="_self"  onclick="changeFavicon('coffee.png')">Coffee Menu</a>  
+     
+</nav>
+
+<main>
+    <div id="about" class="card"> <!-- Added id attribute for the about section -->
+        <h2>About Me</h2>
+          <p>Hey there! I'm Joy, a first-year Computer Science student at CvSU Bacoor. 
+          I'm passionate about learning and exploring the world of technology. 
+          Join me as I navigate through the exciting challenges of coding and share my journey with you!</p>
+    </div>
+  
+   <div class="card">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me, click here at:</p>
+    <a href="https://www.facebook.com/profile.php?id=100084958797001" class="social-link"><img src="/storage/0403-0201/login form/fb.jpg" alt="Facebook" class="social-icon"></a>
+    <a href="mailto:inocenciojamaicajoy@gmail.com" class="social-link"><img src="/storage/0403-0201/login form/gmail.jpg" alt="Gmail" class="social-icon"></a>
+    <a href="https://www.tiktok.com/@_dampi?_r=1&_d=e7kmk4e7k840hm&sec_uid=MS4wLjABAAAAZjr8TErWH2p-bV2KpGZmxPkK58p2XGNl5g-vA6OLnx8LzfXjksoBhSFt1zYFStjP&share_author_id=7220981959929234437&sharer_language=en&source=h5_t&u_code=e7be5835eg5mk5&timestamp=1713330336&user_id=7220981959929234437&sec_user_id=MS4wLjABAAAAZjr8TErWH2p-bV2KpGZmxPkK58p2XGNl5g-vA6OLnx8LzfXjksoBhSFt1zYFStjP&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7355684461272844038&share_link_id=b0709cd8-83bd-4114-bb90-1c999d928fb4&share_app_id=1180&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1" class="social-link"><img src="/storage/0403-0201/login form/tiktok.jpg" alt="Tiktok" class="social-icon"></a>
+    <a href="https://www.instagram.com/lluv_joy?igsh=czN5azM2am9xbmtz" class="social-link"><img src="/storage/0403-0201/login form/ig.jpg" alt="Instagram" class="social-icon"></a>
+          </div>
+  
+    <div class="card">
+        <h2>Introduction</h2>
+        <p>Welcome to my vibrant digital corner! This webpage is a reflection of my dynamic interests and daily life. 
+          Dive into my world and discover my table schedule, ensuring you're always in the loop with my daily activities.Immerse yourself in my curated playlists, each song a soundtrack to a moment in my life. 
+          Watch music videos that resonate with my soul, offering a glimpse into my artistic preferences and inspirations.
+          And don't miss out on the delightful menu from my favorite coffee shop, where each item is a flavorful journey waiting to be savored. 
+          Join me as we explore the rhythm of life through these elements that make my world unique.</p>
+    </div>
+  
+      <div class="card">
+        <h2>Projects</h2>
+        <p>Check out my latest projects and creations:</p>
+        <p>"Here, you'll find a showcase of my projects that highlight my passion for creativity and technology. 
+          Explore my Table Scheduler project, designed to efficiently manage and schedule tables for various events.
+          Dive into the world of music with my Playlist project, where you can discover and enjoy my favorite playlist. 
+          Immerse yourself in a visual and auditory journey with my Music Video project.
+          Lastly, experience the delightful offerings of a cozy coffee shop with my Coffee Shop Menu project. 
+          Each project represents a unique journey of exploration and learning, inviting you to discover the stories behind each creation. 
+          Let's embark on a journey of innovation and inspiration together!"
+          </p>
+        </div>
+  
+</main>
+
+<footer>
+    <p>&copy; 2024 My Website Homepage. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

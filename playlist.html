@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Playlist</title>
+  <link rel="icon" type="image/x-icon" href="/storage/0403-0201/login form/playlist.ico">
+</head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  text-align: center; 
+}
+.background {
+  background-image: url('951c3a36a42573c8346ece596e6b225a.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 500vh; 
+  overflow: auto;
+}
+
+.heading1 {
+  color: white;
+  font-family: "Times New Roman";
+}
+
+.heading2 {
+  color: white; 
+  font-family: Times New Roman;
+}
+.audio-player {
+  max-width: 360px;
+  margin: 50px auto; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+}
+
+.audio-player img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.audio-player audio {
+  width: 100%;
+  margin-top: 10px;
+}
+.lyrics {
+  font-family: Times New Roman;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 500px; /* Set the height to a specific value */
+  width: 500px; /* Set the width to a specific value */
+  overflow: auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lyrics-container {
+  width: 500px; /* Set the width to a specific value */
+  height: 500px; /* Set the height to a specific value */
+  margin: 0 auto;
+  padding: 100px;
+  text-align: center;
+}
+
+.lyrics p {
+  margin: 10px 0; /* Adjust the top and bottom margin */
+  padding: 6px 0; /* Adjust the top and bottom padding */
+  line-height: 1.5;
+  color: white;
+  text-align: center;
+}
+.image-size {
+  width: 200px;
+  height: 200px;
+}
+.squircle {
+  border-radius: 20%;
+} 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  z-index: 1;
+  transition: background-color 0.3s; /* Add transition effect for smoother color change */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s; /* Add transform transition */
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block; /* Ensure proper spacing between links */
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+    main {
+        padding: 200px 20px 20px; /* Increase top padding to make space for header */
+        text-align: center;
+   
+    }
+</style>
+
+<nav>
+  <a href="myhomepage.html" target="_self">Home</a>
+    <a href="table.html" target="_self" onclick="changeFavicon('schedule.png')">Schedule</a>
+        <a href="playlist.html" target="_self" onclick="changeFavicon('playlist.png')">My Playlist</a>
+      <a href="musicvideo.html" target="_self" onclick="changeFavicon('mv.png')">Music Video</a>
+      <a href="coffeemenu.html" target="_self"  onclick="changeFavicon('coffee.png')">Coffee Menu</a>  
+     
+</nav>
+
+<body style="background-image: url('/storage/0403-0201/login form/butterflybgimage.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; margin: 0; padding: 0;">
+  <center> 
+<div class="audio-player">
+  <div class="squircle"> 
+  <img src="/storage/0403-0201/login form/denisejulia.jpg" alt="Denise Album"  width="300px" height="300px"> 
+      </div>
+  <h1 class="heading1">Butterflies</h1>
+  <h2 class="heading2">Denise Julia</h2>
+  <div class="audio-controls">
+    <audio controls>
+      <source src="/storage/0403-0201/login form/Denise Julia -  butterflies (2 a.m. Version) (Official Audio).mp3" type="audio/mp3">
+      
+    </audio>
+    <div class="lyrics">
+      <p style="color: white"> 
+      <br>
+We been on some dumb shit lately<br>
+ <mark style="background-color: #CA9BF7; color: black; font:"> Finding love in the worst place to be<br></mark>
+Different dudes in the party<br>
+Finding no truth<br>
+'Cause they lyin<br>
+      <br> 
+Hitttin up girls but you want me<br>
+So I entertain em boys say I'm lonely<br>
+<mark style="background-color: #F6CEFC; color: black;">But I figured I need real I hate empty<br></mark>
+Want a real thing<br>
+Not some dumb fling<br>
+<br>
+Is it simply the buzz from the liquor?<br>
+Butterflies on your neck make me quiver<br>
+Is it true cause I hear all the rumors<br>
+      <br>
+But I gotta ask<br>
+<mark style="background-color: #CA9BF7; color: black;">How you make me act like this oh no?<br>
+How you make me act like this oh no?<br>
+How you make me trip like this oh no?<br> </mark>
+Tho this ain't new to me<br>
+I ain't used to this<br>
+      <br>
+ <mark style="background-color: #F6CEFC; color: black;">How you make me act like this oh no? <br>
+How you make me act like this oh no? <br>
+How you make me trip like this oh no? <br></mark>
+Tho this ain't new to me <br>
+I ain't used to this <br>
+ <br>
+<mark style="background-color: #CA9BF7; color: black;">Lookin at you boy I see that you're one of a kind <br></mark>
+Tatted up, a pretty smile <br>
+Your body buff, your sleezy lines <br>
+Player playin all his games <br>
+But I see thru you and your fade <br>
+Yeah you fuckboy and your chains <br>
+They ain't gon make me run away <br>
+ <br>
+<mark style="background-color: #F6CEFC; color: black;">But have you had a girl like me <br></mark>
+Give a taste of loyalty? <br>
+Have you had a girl like me no, no, no <br>
+ <br>
+But I gotta ask <br>
+<mark style="background-color: #CA9BF7; color: black;"How you make me act like this oh no? <br>
+How you make me act like this oh no? <br>
+How you make me trip like this oh no? <br></mark>
+Tho this ain't new to me <br>
+I ain't used to this <br>
+ <br>
+<mark style="background-color: #F6CEFC; color: black;">How you make me act like this oh no? <br>
+How you make me act like this oh no? <br>
+How you make me trip like this oh no? <br></mark>
+Tho this ain't new to me <br>
+I ain't used to this <br>
+ <br>
+<mark style="background-color: #CA9BF7; color: black;">Used to this fantasy, no <br> </mark>
+Used to this fallacy <br>
+I ain't used to <br>
+I ain't used to this <br>
+ <br>
+  
+        </p>
+      </center>
+    </div>
+  </div>
+</div>
+</body>
+</html>
